@@ -5,7 +5,7 @@ var playButton = document.getElementById("playButton"); // Change the ID to "pla
 
 window.onload = function() {
     var player = new AAMPMediaPlayer();
-    player.load(url);
+   // player.load(url);
 
     playButton.addEventListener("click", function() {
         console.log('click');
@@ -14,6 +14,7 @@ window.onload = function() {
 
     playButton.addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
+            player.load(url);
             console.log('enter');
             togglePlayPause();
         }
