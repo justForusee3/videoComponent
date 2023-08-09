@@ -8,6 +8,7 @@ window.onload = function() {
    // player.load(url);
 
     playButton.addEventListener("click", function() {
+        document.body.style.backgroundColor = "lightgray";
         console.log('click');
        // togglePlayPause();
         var player = new AAMPMediaPlayer();
@@ -15,6 +16,7 @@ window.onload = function() {
     });
 
     playButton.addEventListener("keydown", function(event) {
+        document.body.style.backgroundColor = "lightgray";
         if (event.key === "Enter") {
             player.load(url);
             console.log('enter');
