@@ -4,12 +4,14 @@ var video = document.getElementById("videoPlayer"); // Change the ID to "videoPl
 var playButton = document.getElementById("playButton"); // Change the ID to "playButton"
 
 window.onload = function() {
-    var player = new AAMPMediaPlayer();
+    //var player = new AAMPMediaPlayer();
    // player.load(url);
 
     playButton.addEventListener("click", function() {
         console.log('click');
-        togglePlayPause();
+       // togglePlayPause();
+        var player = new AAMPMediaPlayer();
+        player.load(url);
     });
 
     playButton.addEventListener("keydown", function(event) {
